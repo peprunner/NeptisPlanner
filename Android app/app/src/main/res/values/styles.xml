@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BasicButton" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/button_basic</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="NextButton" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/button_next</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="DialogButton" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/button_white</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Customize rating bar color -->
+    <style name="RatingBar" parent="AppTheme" >
+        <item name="colorControlNormal">@color/lightGrey</item>
+        <item name="colorControlActivated">@color/starYellow</item>
+        <item name="android:background">@drawable/basic_blue_background</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Thomas Collerton <tho.collerton@gmail.com>
+  ~ This file is part of the Neptis project
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/delete_plan"
+        android:title="Delete"
+        android:icon="@drawable/ic_delete"
+        android:visible="false"
+        app:showAsAction="always"/>
+</menu>

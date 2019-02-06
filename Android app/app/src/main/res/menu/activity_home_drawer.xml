@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Thomas Collerton <tho.collerton@gmail.com>
+  ~ This file is part of the Neptis project
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_planning"
+            android:icon="@drawable/ic_menu_newplan"
+            android:title="@string/drawer_plan"
+            android:checkable="true"/>
+        <!--
+        <item
+            android:id="@+id/nav_plans"
+            android:icon="@drawable/ic_menu_plans"
+            android:title="@string/drawer_plans" />
+        -->
+
+        <item android:title="Account">
+            <menu>
+                <item
+                    android:id="@+id/nav_survey"
+                    android:icon="@drawable/ic_menu_survey"
+                    android:title="@string/drawer_survey" />
+                <item
+                    android:id="@+id/nav_survey_free"
+                    android:icon="@drawable/ic_menu_survey"
+                    android:title="@string/drawer_surveyNo" />
+                <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_menu_logout"
+                    android:title="@string/app_exit" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

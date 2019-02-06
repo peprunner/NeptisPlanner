@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name" translatable="false">NEPTIS Planner</string>
+
+    <string name="notification_text">The destination has been reached</string>
+    <string name="open_gps">Would you like to open the navigation app?</string>
+    <string name="activity_report">Report</string>
+    <string name="activity_settings">Settings</string>
+    <string name="activity_planning">Planning</string>
+    <string name="activity_my_plans">My Plans</string>
+    <string name="toast_close">Press Back again to exit the app</string>
+    <string name="alert_welcome">Please set your transport modality in the \'Settings\' menu.\n(default: \'walking\')\n\nYour location: %1$s</string>
+    <string name="alert_information_title">Information</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_register_user">New user</string>
+    <string name="action_remember_login">Remember me</string>
+    <string name="planning_choice_tour">Create your tour</string>
+    <string name="planning_choice_hint">Digit to select..</string>
+    <string name="planning_choice_structure_selection">Select the structure</string>
+
+    <string name="title_plan_list">Plans</string>
+    <string name="title_plan_detail">Plan Detail</string>
+    <string name="app_exit">Exit</string>
+    <string name="city">City</string>
+    <string name="museum">Museum</string>
+    <string name="fragment_choice_text2">Choose the kind of route you would like to compute</string>
+    <string name="fragment_choice_text3">Select the museum</string>
+    <string name="next">Next</string>
+    <string name="fragment_visits_text1">Number of attractions that you want to visit:</string>
+    <string name="fragment_visits_text2">Attractions you want to include:</string>
+    <string name="fragment_visits_text3">Attractions you want to exclude:</string>
+    <string name="fragment_plans_list_title">My plans</string>
+
+    <string name="facebook_application_id" translatable="false">2274982622783348</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb2274982622783348</string>
+    <string name="rating_fragment_main_text">Rate the attraction</string>
+    <string name="or">Or</string>
+    <string name="google_key" translatable="false">274641228836-9k36s0n5gu7h1dgpim8b5heu9sqve32p.apps.googleusercontent.com</string>
+    <string name="empty">[empty]</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="survey">Survey</string>
+    <string name="open_air_route">Open air</string>
+    <string name="museum_route">Museum</string>
+
+    <string name="title_activity_firebase_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="permission_rationale" translatable="false">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="activity_attractions">Attractions</string>
+    <string name="fragment_rating_text">Your rating will be used by the system in order to improve the quality of future plans</string>
+    <string name="fragment_rating_title">Rate the attraction</string>
+    <string name="activity_rate">Rate</string>
+    <string name="drawer_city_attrs">City</string>
+    <string name="drawer_museum_attrs">Museum</string>
+    <string name="drawer_rate">Rate attractions</string>
+    <string name="drawer_plan">New plan</string>
+    <string name="drawer_current">Current plan</string>
+    <string name="drawer_plans">Saved plans</string>
+    <string name="drawer_survey">Survey Neptis</string>
+    <string name="drawer_surveyNo">Survey No Neptis</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="attraction_minutes">%1$d minutes</string>
+    <string name="attraction_minutes_shortened" translatable="false">%1$dm</string>
+    <string name="choose_museum_hint">Museum name</string>
+    <string name="choose_museum_title">Choose the museum</string>
+    <string name="attraction_dialog_add">Add</string>
+    <string name="attraction_dialog_cancel">Cancel</string>
+    <string name="city_region" translatable="false">%1$s, %2$s</string>
+    <string name="current_location">Current location</string>
+    <string name="loading_loc_data">Loading location data</string>
+    <string name="searching">Searching&#8230;</string>
+    <string name="filter_museum_hint">Filter museum name</string>
+    <string name="no_museums_available">No museums aviailable in your area</string>
+    <string name="start_tour_btn">Start tour</string>
+    <string name="start">Begin</string>
+    <string name="end">End</string>
+    <string name="rate_attr">Rate attraction</string>
+    <string name="select_attractions">Select attractions to be included or excluded from the tour</string>
+    <string name="included_attrs">Included attractions/areas</string>
+    <string name="excluded_attrs">Excluded attractions/areas</string>
+    <string name="include">Include</string>
+    <string name="exclude">Exclude</string>
+    <string name="compute_tour">Compute tour</string>
+    <string name="next_attr">Next attraction</string>
+    <string name="stop">Stop</string>
+    <string name="no_current_tour">No tour currently</string>
+    <string name="confirm">Confirm</string>
+    <string name="create_tour">Create tour</string>
+    <string name="visit">Visit</string>
+</resources>

@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        applicationId "it.uniroma1.neptis.planner"
+        minSdkVersion 22
+        targetSdkVersion 26
+        versionCode 9
+        versionName "beta1"
+        multiDexEnabled true
+        resConfigs "it","en"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    signingConfigs {
+        release {
+                storeFile file('/Users/giuseppe/Desktop/NeptisPlanner-master/neptis-keystore.jks')
+                storePassword 'plannerkeystore'
+                keyAlias 'NeptisPlanner'
+                keyPassword 'neptiskeystore'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+    sourceSets {
+        main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] }
+        debug {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "2048M"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'org.slf4j:slf4j-api:1.7.22'
+    implementation 'com.github.tony19:logback-android:1.1.1-9'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.facebook.android:facebook-android-sdk:4.28.0'
+    implementation 'com.firebaseui:firebase-ui-auth:3.2.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.4'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.4'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+}
+
+
+
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

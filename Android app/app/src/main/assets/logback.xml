@@ -1,0 +1,36 @@
+<!--
+  ~ Copyright (c) 2018. Thomas Collerton <tho.collerton@gmail.com>
+  ~ This file is part of the Neptis project
+  -->
+
+<configuration>
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>/sdcard/neptis_planner/neptis.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%msg %n</pattern>
+        </encoder>
+    </appender>
+    <appender name="EVENT_LOG" class="ch.qos.logback.core.FileAppender">
+        <file>/sdcard/neptis_planner/logfile_${bySecond}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%msg %n</pattern>
+        </encoder>
+    </appender>
+    <appender name="LOGCAT" class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>%logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="event_logger" level="DEBUG" additivity="false">
+        <appender-ref ref="EVENT_LOG"/>
+    </logger>
+    <logger name="logcat_logger" level="DEBUG" additivity="false">
+        <appender-ref ref="LOGCAT"/>
+    </logger>
+    <root additivity="false">
+        <appender-ref ref="LOGCAT"/>
+    </root>
+</configuration>
